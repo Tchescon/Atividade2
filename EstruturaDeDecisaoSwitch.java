@@ -46,7 +46,14 @@ public class EstruturaDeDecisaoSwitch {
 
 
         //Pesquisem como mudar esse conjunto de if
-        //para o switch colem aqui em baixo 
+        //para o switch colem aqui em baixo
+         switch (kmRodados / 10000) {
+            case 0 -> System.out.println("Não precisa de revisão");
+            case 1 -> System.out.println("Revisão básica");
+            case 2 -> System.out.println("Revisão plus");
+            case 3 -> System.out.println("Revisão mega");
+            default -> System.out.println("Joga Fora!");
+        };
     }
 
 
